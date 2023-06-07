@@ -1,0 +1,25 @@
+#include "pch.h"
+#include "iostream"
+#include "tchar.h"
+#include "stdio.h"
+#include "stdlib.h"
+using namespace std;
+int main()
+{
+using namespace std;
+setlocale(LC_ALL, "Russian");
+int rashod,rastoanie,stoimost1,stoimost2,stoimost3; #вводим переменные
+cout << "ВВедите стоимость литра бензина трех видов бензина через пробел";
+cin >> stoimost1 >> stoimost2 >> stoimost3; #присваиваем переменным стоимость литра трех видов бензина
+cout << "ВВедите средний расход бензина на 100км";
+cin >>rashod; #присваиваем переменной расход бензина на 100км
+cout << "ВВедите расстояние в км";
+cin >>rastoanie; #присваиваем переменной растояние, которое нужно пройти
+#выводим результаты расчетов
+cout << "------------------------ -------------";
+cout << "стоимость первого бензина " << stoimost1*rashod*rastoanie/100;
+cout << "стоимость второго бензина " << stoimost2*rashod*rastoanie/100;
+cout << "стоимость третьего бензина" << stoimost3*rashod*rastoanie/100;
+cout << "------------------------------------";
+return 0;
+}
